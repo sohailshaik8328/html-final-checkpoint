@@ -370,6 +370,24 @@ a {
   display: none;
 }
 
+@-webkit-keyframes myAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes myAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
 .hover_section strong {
   font-size: 2rem;
 }
@@ -388,6 +406,8 @@ a {
   display: inline-flex;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  -webkit-animation: myAnimation 1.5s;
+          animation: myAnimation 1.5s;
 }
 
 .image img {
@@ -643,6 +663,15 @@ textarea {
           transform: scale(1.1);
 }
 
+@keyframes myAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
 .gal_image {
   position: relative;
   overflow: hidden;
@@ -650,6 +679,8 @@ textarea {
 
 .gal_image:hover .gal_p {
   display: block;
+  -webkit-animation: myAnimation 2s;
+          animation: myAnimation 2s;
 }
 
 .gal_image .gal_image_content {
@@ -672,6 +703,16 @@ textarea {
 
 .gallery {
   margin-top: 4rem;
+}
+
+.gal_image_content h3 {
+  -webkit-animation: myAnimation 3s;
+          animation: myAnimation 3s;
+}
+
+.gal_image_content h3:hover {
+  -webkit-animation: myAnimation 3s;
+          animation: myAnimation 3s;
 }
 
 @media screen and (max-width: 768px) {

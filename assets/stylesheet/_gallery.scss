@@ -16,15 +16,26 @@
     }
     
 }
+@keyframes myAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
 .gal_image{
     position: relative;
     overflow: hidden;
     &:hover{
         .gal_p{
            display: block;
+           animation: myAnimation 2s;
+
        }
    }
 }
+
 .gal_image .gal_image_content{
     position: absolute;
     left: 5%;
@@ -42,6 +53,15 @@
 }
 .gallery{
     margin-top: 4rem;
+}
+.gal_image_content h3 {
+    animation: myAnimation 3s;
+
+    &:hover {
+        animation: myAnimation 3s;
+
+    }
+
 }
 
 @media screen and (max-width:768px) {

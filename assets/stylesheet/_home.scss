@@ -163,6 +163,15 @@ line-height: 1.5;
     padding: 2rem;
     display: none;
 }
+
+@keyframes myAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
 .hover_section strong {
     font-size: 2rem;
 }
@@ -171,9 +180,12 @@ line-height: 1.5;
     transition: all 0.5s ease-in-out;
     overflow: hidden;
     position: relative;
+
     &:hover .hover_section {
         display: inline-flex;
         transition: all 0.5s ease-in-out;
+        animation: myAnimation 1.5s;
+
     }
 
 }
