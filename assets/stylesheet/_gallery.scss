@@ -1,0 +1,59 @@
+.hero_section_two{
+    background-image: url(../media/slider-image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.gallery img{
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+
+    }
+    
+}
+.gal_image{
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        .gal_p{
+           display: block;
+       }
+   }
+}
+.gal_image .gal_image_content{
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    color: $white;
+    font-weight: bold;
+}
+.gal_image h3 strong{
+    font-weight: lighter;
+}
+.gal_image_content P{
+    font-weight: lighter;
+    line-height: 3;
+    display: none;
+}
+.gallery{
+    margin-top: 4rem;
+}
+
+@media screen and (max-width:768px) {
+    .hero_section_two {
+        height: 60vh;
+    }
+    .gal_image img{
+        width: 90%;
+        margin: auto;
+    }
+    .gal_image{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

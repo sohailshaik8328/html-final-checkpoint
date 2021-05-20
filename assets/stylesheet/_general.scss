@@ -1,0 +1,82 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: $font;
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3  {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.8rem;
+}
+ h5{
+     font-size: 1.3rem;
+ }
+ h6 {
+     font-size: 1rem;
+ }
+ .container{
+     max-width: 1620px;
+     width: 100%;
+    //  border: 1px solid black;
+     margin: auto;
+ }
+ .flex{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .center{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .wrap{
+     flex-wrap: wrap;
+ }
+ .flex-23{
+     flex : 0 1 20%;
+ }
+ .flex-30{
+     flex: 0 1 30%;
+ }
+ .flex-33{
+     flex: 0 1 33.33%;
+ }
+ .flex-45{
+     flex: 0 1 45%;
+ }
+ a{
+     text-decoration: none;
+ }
+
+//  buttons
+%btn{
+    border-radius: 2px;
+    font-size: 1.3rem;
+    width: 250px;
+    height: 50px;
+    background-color: $primary;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background-color: black
+    }
+}
+.btn_div{
+    @extend  %btn ;
+}
+.btn{
+    color: $white;
+}
